@@ -23,6 +23,3 @@ nbactions.xml
 .DS_Store
 Thumbs.db
 
-# Local tooling
-.claude/
-CLAUDE.md
