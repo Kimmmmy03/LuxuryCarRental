@@ -1,0 +1,28 @@
+# Build output
+build/
+dist/
+*.class
+*.war
+*.jar
+*.ear
+
+# NetBeans private/local files
+nbproject/private/
+nb-configuration.xml
+nbactions.xml
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local tooling
+.claude/
+CLAUDE.md

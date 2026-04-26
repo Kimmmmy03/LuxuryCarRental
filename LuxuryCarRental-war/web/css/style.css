@@ -1,0 +1,155 @@
+/* IMPORT GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+/* --- GLOBAL VARIABLES --- */
+:root {
+    --bg-color: #0f0f0f;         /* Deepest Black */
+    --card-bg: #1a1a1a;          /* Dark Grey */
+    --gold: #d4af37;             /* Luxury Gold */
+    --gold-hover: #b59025;       /* Darker Gold */
+    --text-main: #ffffff;
+    --text-muted: #aaaaaa;
+    --danger: #ff4d4d;
+    --success: #00c851;
+}
+
+/* --- RESET & BASIC SETUP --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for titles */
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+
+/* --- NAVIGATION BAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--gold); letter-spacing: 2px; }
+
+.nav-links a {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+/* --- BUTTONS --- */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: var(--gold);
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 2px; /* Sharp edges look more premium */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--gold-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-danger { background: var(--danger); color: white; }
+.btn-danger:hover { background: #cc0000; }
+
+/* --- FORMS & CONTAINERS --- */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.form-box {
+    background: var(--card-bg);
+    padding: 40px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus { border-color: var(--gold); outline: none; }
+
+/* --- CAR GRID --- */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.car-card {
+    background: var(--card-bg);
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border-color: var(--gold);
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.car-info { padding: 20px; text-align: center; }
+
+.price-tag {
+    font-size: 1.2rem;
+    color: var(--gold);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* --- TABLES --- */
+table { width: 100%; border-collapse: collapse; background: var(--card-bg); }
+th, td { padding: 15px; border-bottom: 1px solid #333; text-align: left; }
+th { background: #000; color: var(--gold); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+tr:hover { background: #222; }
+
+/* --- UTILITIES --- */
+.text-center { text-align: center; }
+.mt-20 { margin-top: 20px; }
