@@ -34,7 +34,7 @@ Manual or file-based car rental processes suffer from several recurring problems
 - Browse the exclusive fleet with model details, daily rates, and images
 - Select a vehicle and reserve it for a chosen date range
 - Automatic total-cost calculation based on duration × daily rate
-- View personal booking history and cancel pending reservations
+- View personal booking summary and cancel pending reservations
 
 ### Administrator
 - Role-based admin dashboard
